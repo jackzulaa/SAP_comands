@@ -1,0 +1,5 @@
+grant insert on "schemaname"."tablename" to touser; 
+hdbsql SYSTEMDB=> \c -u SYSTEM -d DBNAME -p Password
+hdbsql SYSTEMDB=> \c -u USERNAMETENANT -d HDT -p password
+
+alter user username  password passw NO FORCE_FIRST_PASSWORD_CHANGE valid until forever;
